@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "wikidata-linker"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "wikidata_linker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+WikibaseIntegrator = "^0.12.5"
+classopt = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+
+[tool.pyright]
+include = ["src"]
+venv = "wikidata-linker-Ptt3W_jz-py3.11"
+venvPath = "/home/eniehack/.cache/pypoetry/virtualenvs/"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
